@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="/css/style.css">
+
+<title>My Recipes App</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #032d4b;">
+        <a href="/" class="navbar-brand">Shubham Kumar Shukla</a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="/" class="nav-item nav-link active"><i class="fas fa-home"></i> Home</a>
+                <a href="/#about_me" class="nav-item nav-link">About</a>
+                <a href="/#projects" class="nav-item nav-link">Projects</a>
+                <a href="/#contact" class="nav-item nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-container">
+        <div class="back-image" id="RecipeBack">
+            <div class="my-container">
+                <h1><span>My Recipes App</span></h1>                
+            </div>
+        </div>
+        <div class="div-left">
+            <a href="https://github.com/shubhamshukla7794/spring5-recipes-app" 
+                class="btn btn-primary"  target="_blank">
+                 View on Github <i class="fab fa-github fa-2x"></i></a>
+        </div>
+        <div class="div-right">
+            <a href="https://github.com/shubhamshukla7794/spring5-recipes-app/archive/main.zip" class="btn btn-primary">
+                <i class="fas fa-download fa-2x"></i> Download Zip
+            </a>
+        </div>
+        <span class="clear"></span>
+        <div class="readme">       
+            <div class="container-fluid">
+                <div class="project-content">
+                    <h1>My Recipe Application</h1>
+                    <hr>
+                    <p>The project <strong>My Recipes App</strong> a spring sample application developed while 
+                        undergoing an online course called 
+                        <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" target="_blank">
+                            Spring Framework 5: Beginner to Guru</a>.
+                    </p>
+                    <p>
+                        In this application, the user can view all the recipes on the Main Page. Here, the user 
+                        can also explore the recipes based on the categories available. In this application, you can add
+                        a 'New Recipe' or you can update an existing recipe. One can also delete an existing recipe.
+                        There is also a landing page for <strong>'404 Error'</strong> as well as a <strong>'Bad Request'</strong> error.
+                    </p>
+                    
+                    <br>
+
+                    <h3>Running Application Process on your computer</h3>
+                    <hr>
+                    <p>My Recipes App is a <a href="https://spring.io/guides/gs/spring-boot" target="_blank">Spring Boot</a> 
+                        application built using <a href="https://spring.io/guides/gs/maven/"  target="_blank">Maven</a>.</p>
+                    <ul>
+                        <li><p>Download the application from the above</p></li>
+                        <li><p>Unzip the application</p></li>
+                        <li><p>Open your terminal</p></li>
+                        <li><p>Move to the root of the application</p></li>
+                        <li><p>Run <code>mvn spring-boot:run</code></p></li>
+                        <li><p>Navigate to 
+                            <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> in your default browser</p>
+                        </li>
+                    </ul>
+
+                    <br>
+
+                    <h3>Working with Recipe App in your IDE</h3>
+                    <hr>
+                    <h4>Prerequisites</h4>
+                    <p>The following items should be installed in your system:</p>
+                    <ul>
+                        <li><p><a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html"
+                            target="_blank">Java 11</a> or newer</p></li>
+                        <li><p>Download and Install 
+                            <a href="https://maven.apache.org/download.cgi"
+                               target="_blank">Maven</a></li>
+                        <li><p>Your preferred IDE</p></li>
+                    </ul>
+                    <br>
+                    <h3>Database Configuration</h3>
+                    <hr>
+                    <p>In its default configuration, Recipe App uses an in-memory database (H2) which gets populated at startup 
+                       with data. The H2 console is automatically exposed at 
+                       <code>http://localhost:8080/h2-console</code> 
+                       and it is possible to inspect the content of the database using the <code>jdbc:h2:mem:testdb</code> url.
+                    </p>
+                    <br>
+                    <h3>Application</h3>
+                    <hr>
+                    <div class="grid2">
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751407-60d8f600-6d43-11eb-9ad4-f8e3922e04f6.png" class="fancybox" data-fancybox="gallery1" title="Home" data-caption="Home Screen showing all recipes" id="img1">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751407-60d8f600-6d43-11eb-9ad4-f8e3922e04f6.png" class="img-fluid">
+                            </a>
+                            <p>Home Screen showing all recipes</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751488-7817e380-6d43-11eb-958d-cb313f60a75d.png" class="fancybox" data-fancybox="gallery1" title="Category" data-caption="Showing recipes under a particular category">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751488-7817e380-6d43-11eb-958d-cb313f60a75d.png" class="img-fluid">
+                            </a>
+                            <p>Showing Category based recipe list</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751533-85cd6900-6d43-11eb-8b22-840768e9f663.png" class="fancybox" data-fancybox="gallery1" title="Recipe" data-caption="View of the recipe page">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751533-85cd6900-6d43-11eb-8b22-840768e9f663.png" class="img-fluid">
+                            </a>
+                            <p>View of the recipe page</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751565-9251c180-6d43-11eb-99c2-fb8eaa5fd92a.png" class="fancybox" data-fancybox="gallery1" title="Ingredients" data-caption="Viewing the ingredients of the recipe">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751565-9251c180-6d43-11eb-99c2-fb8eaa5fd92a.png" class="img-fluid">
+                            </a>
+                            <p>Viewing the ingredients of the recipe</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751784-d93fb700-6d43-11eb-80c5-8cacc4dee2f0.png" class="fancybox" data-fancybox="gallery1" title="Update" data-caption="Updating the recipe">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751784-d93fb700-6d43-11eb-80c5-8cacc4dee2f0.png" class="img-fluid">
+                            </a>
+                            <p>Updating the recipe</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751800-e361b580-6d43-11eb-947a-51b3eae2c52e.png" class="fancybox" data-fancybox="gallery1" title="New Recipe" data-caption="New recipe form">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751800-e361b580-6d43-11eb-947a-51b3eae2c52e.png" class="img-fluid">
+                            </a>
+                            <p>New recipe form</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751839-eb215a00-6d43-11eb-9f9c-0635fa77aff5.png" class="fancybox" data-fancybox="gallery1" title="New Recipe Filled" data-caption="New recipe form with details filled">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751839-eb215a00-6d43-11eb-9f9c-0635fa77aff5.png" class="img-fluid">
+                            </a>    
+                            <p>New recipe form with details filled</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/107751873-f7a5b280-6d43-11eb-84ea-207f8b696896.png" class="fancybox" data-fancybox="gallery1" title="New Recipe" data-caption="New recipe form to upload image and add ingredients">
+                                <img src="https://user-images.githubusercontent.com/37581959/107751873-f7a5b280-6d43-11eb-84ea-207f8b696896.png" class="img-fluid">
+                            </a>
+                            <p>New recipe form to upload image and add ingredients</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/110211073-e111f780-7eba-11eb-8579-3d18d220ba9c.png" class="fancybox" data-fancybox="gallery1" title="New Recipe" data-caption="New recipe form to upload image and add ingredients">
+                                <img src="https://user-images.githubusercontent.com/37581959/110211073-e111f780-7eba-11eb-8579-3d18d220ba9c.png" class="img-fluid">
+                            </a>
+                            <p>Add new Ingredient to the recipe</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/110211075-e2432480-7eba-11eb-87e0-7e81468468fd.png" class="fancybox" data-fancybox="gallery1" title="New Recipe" data-caption="New recipe form to upload image and add ingredients">
+                                <img src="https://user-images.githubusercontent.com/37581959/110211075-e2432480-7eba-11eb-87e0-7e81468468fd.png" class="img-fluid">
+                            </a>
+                            <p>Update an existing Ingredient of the recipe</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/110210860-a3609f00-7eb9-11eb-9eb8-6a0417ba008c.png" class="fancybox" data-fancybox="gallery1" title="New Recipe" data-caption="New recipe form to upload image and add ingredients">
+                                <img src="https://user-images.githubusercontent.com/37581959/110210860-a3609f00-7eb9-11eb-9eb8-6a0417ba008c.png" class="img-fluid">
+                            </a>
+                            <p>404 Error</p>
+                        </div>
+                        <div>
+                            <a href="https://user-images.githubusercontent.com/37581959/110210862-a52a6280-7eb9-11eb-90a5-bf92dfc374a3.png" class="fancybox" data-fancybox="gallery1" title="New Recipe" data-caption="New recipe form to upload image and add ingredients">
+                                <img src="https://user-images.githubusercontent.com/37581959/110210862-a52a6280-7eb9-11eb-90a5-bf92dfc374a3.png" class="img-fluid">
+                            </a>
+                            <p>400 Error</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    
+        <footer class="mainFooter">
+            <div class="footer-copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <a class="logo" href="/">
+                                <strong>Shubham Kumar Shukla</strong>
+                            </a>
+                        </div>
+                        <div class="col-md-9">
+                            <p>© 2021 All Rights Reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/javascript/myScript.js"></script>
+</body>
+</html>
