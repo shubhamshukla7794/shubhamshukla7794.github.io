@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" 
-      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" 
+      crossorigin="anonymous" />
 <link rel="stylesheet" href="css/style.css">
 <title>Shubham Kumar Shukla</title>
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon-sks.png">
@@ -41,7 +42,8 @@
                  
                 <hr class="my-4">
                 <p class="lead" style="font-size: xx-large;">I am a Full Stack Developer</p>
-                <a class="btn btn-primary btn-lg" href="assest/Shubham Kumar Shukla Resume.pdf" id="dwnBtn"><i class="fas fa-file"></i> Download Resume</a>
+                <a class="btn btn-primary btn-lg" href="assest/Shubham Kumar Shukla Resume.pdf" id="dwnBtn">
+                    <i class="fas fa-file"></i> Download Resume</a>
             </div>
             <div class="col-md-6 mt-3">
                 <img src="images/Side-Image.png" class="side-img" width="100%" height="100%">
@@ -79,14 +81,17 @@
                             </div>
                         </div>
                         <br>
-                        <div style="margin-top: 10%;">
+                        <div class="exp">
                             <ul>
                                 <li><p>Conducted more than 10 security awareness sessions for the accounts, post a 
                                     security incident with an average attendance of 100 people</p></li>
-                                <li><p>Developed a static intranet portal for the department using HTML, CSS, and JavaScript</p></li>
-                                <li><p>Provided consultation and answers to the client's RFI/RFP associated with Information Security</p></li>
+                                <li><p>Developed a static intranet portal for the department using HTML, CSS, and 
+                                    JavaScript</p></li>
+                                <li><p>Provided consultation and answers to the client's RFI/RFP associated with 
+                                    Information Security</p></li>
                                 <li><p>Monitored Information Security compliance of the designated accounts</p></li>
-                                <li><p>Reviewed the Master Service Agreements from the Information Security standpoint</p></li>
+                                <li><p>Reviewed the Master Service Agreements from the Information Security 
+                                    standpoint</p></li>
                             </ul>
                         </div>
                         <div class="mt-5">
@@ -202,18 +207,32 @@
     </div>
     <!--======== Projects =========-->
     <div class="sections" id="projects">
-        <div class="container">
+        <div class="container project-container">
             <h1 class="content-title">Projects</h1>
             <hr>
             <div class="contents">
                 <div class="row">
-                    <div class="col-md-5">
+                    <div class="col-md-4">
+                        <div class="single-content">
+                            <a href="/templates/urlvalidator.html"><h3><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                              </span></i> URL Validator</h3></a>
+                            <p>
+                                The project URL Validator is a Spring Boot which checks whether a URL exists or not.
+                                If the URL exists then it shows the number of times it was searched. 
+                                If a URL doesn't exist it checks for the parent URL. 
+                                If none exists then it shows the error.
+                            </p>
+                        </div>    
+                    </div>
+                    <div class="col-md-4">
                         <div class="single-content">
                             <a href="/templates/toothless.html"><h3><span class="fa-stack">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
                               </span></i> Toothless Pet Clinic</h3></a>
-                            <p class="info">
+                            <p>
                                 The project Toothless Pet Clinic is my version of the classic spring project 
                                 <a href="https://github.com/spring-projects/spring-petclinic" target="_blank">
                                     <strong>"Spring Pet Clinic"</strong></a>. 
@@ -223,7 +242,7 @@
                             </p>
                         </div>    
                     </div>
-                    <div class="col-md-5 offset-sm-2">
+                    <div class="col-md-4">
                         <div class="single-content">
                             <a href="/templates/recipes.html"><h3><span class="fa-stack">
                                 <i class="fa fa-circle fa-stack-2x"></i>
@@ -237,24 +256,28 @@
                             </p>
                         </div>    
                     </div>
+                    
                 </div>
                 <div class="row" style="margin-top: 2%;">
-                    <div class="col-md-5">
+                    
+                    <div class="col-md-4">
                         <div class="single-content">
-                            <a href="https://github.com/shubhamshukla7794/GeekyKernel" target="_blank"><h3><span class="fa-stack">
+                            <a href="https://github.com/shubhamshukla7794/GeekyKernel" target="_blank">
+                                <h3><span class="fa-stack">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
                               </span></i> GeekyKernel</h3></a>
                             <p>
-                                GeekyKernel is a collaborative type project created during the course tenure in NIIT. The project 
-                                focuses on creating a collaboration tool that can be used by multiple people where they can share 
-                                their ideas using Blogs and Forum.
+                                GeekyKernel is a collaborative type project created during the course tenure in NIIT. 
+                                The project focuses on creating a collaboration tool that can be used by multiple people 
+                                where they can share their ideas using Blogs and Forum.
                             </p>
                         </div>    
                     </div>
-                    <div class="col-md-5 offset-sm-2">
+                    <div class="col-md-4">
                         <div class="single-content">
-                            <a href="https://github.com/shubhamshukla7794/ShoppersHubMain" target="_blank"><h3><span class="fa-stack">
+                            <a href="https://github.com/shubhamshukla7794/ShoppersHubMain" target="_blank">
+                                <h3><span class="fa-stack">
                                 <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-code fa-stack-1x fa-inverse"></i>
                               </span></i> ShoppersHub</h3></a>
@@ -265,6 +288,23 @@
                             </p>
                         </div>    
                     </div>
+                    <div class="col-md-4">
+                        <div class="single-content">
+                            <a href="https://github.com/shubhamshukla7794/Custom-Blogger-Theme" target="_blank">
+                                <h3><span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
+                              </span></i> Designed Blogger Website</h3></a>
+                            <p>
+                                Designed a custome blogger theme for a blogger website. 
+                                For designing this theme I have used HTML, CSS, Bootstrap 4 and Font-Awesome icons 
+                                along with Google Fonts.
+                                You can view the final design at 
+                                <a href="https://savitashukla48.blogspot.com/" target="_blank">
+                                    <strong>savitashukla48.blogspot.com</strong></a>
+                            </p>
+                        </div>    
+                    </div>
                 </div>
             </div>
         </div>
@@ -272,7 +312,7 @@
 
     <!--======== Contact =========-->
     <div  class="sections" id="contact">
-        <div class="container">
+        <div class="container g-i-t-container">
             <h1>Get In Touch</h1>
             <hr>
             <div class="row">
@@ -355,7 +395,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" 
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" 
+        crossorigin="anonymous"></script>
 <script type="text/javascript" src="javascript/myScript.js"></script>
 </body>
 </html>
