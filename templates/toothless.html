@@ -1,198 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" 
-      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
-<link rel="stylesheet" href="/css/style.css">
-<title>Toothless Pet Clinic</title>
-<link rel="shortcut icon" type="image/x-icon" href="/images/favicon-sks.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/svgs/favicon.svg#favicon" sizes="any" type="image/svg+xml">
+    <title>Toothless Pet Clinic</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #032d4b;">
-        <a href="/" class="navbar-brand">Shubham Kumar Shukla</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <!-- Navbar --> 
+    <nav class="navbar fixed-top navbar-expand-lg bg-custom navbar-dark py-2">
+        <div class="container">
+            <a href="/" class="navbar-brand">&lt; Shubham Kumar Shukla /&gt;</a>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="/" class="nav-item nav-link active"><i class="fas fa-home"></i> Home</a>
-                <a href="/#about_me" class="nav-item nav-link">About</a>
-                <a href="/#projects" class="nav-item nav-link">Projects</a>
-                <a href="/#contact" class="nav-item nav-link">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/#header" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#my_details" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#my_projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/#contact_details" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <div class="main-container">
-        <div class="back-image" id="RecipeBack">
-            <div class="my-container">
-                <h1><span>Toothless Pet Clinic</span></h1>                
-            </div>
-        </div>
-        <div class="div-left">
-            <a href="https://github.com/shubhamshukla7794/toothless-pet-clinic" 
-                class="btn btn-primary"  target="_blank">
-                 View on Github <i class="fab fa-github fa-2x"></i></a>
-        </div>
-        <div class="div-right">
-            <a href="https://github.com/shubhamshukla7794/toothless-pet-clinic/archive/main.zip" class="btn btn-primary">
-                <i class="fas fa-download fa-2x"></i> Download Zip
-            </a>
-        </div>
-        <span class="clear"></span>
-        <div class="readme">       
-            <div class="container-fluid">
-                <div class="project-content">
-                    <h1>Toothless Pet Clinic Application</h1>
-                    <hr>
-                    <p>The project <strong>Toothless Pet Clinic</strong> is my version of the classic spring project  
-                        <a href="https://github.com/spring-projects/spring-petclinic" target="_blank">
-                           "Spring Pet Clinic"</a>. 
-                       This application was developed while undergoing an online course called
-                        <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" target="_blank">
-                            Spring Framework 5: Beginner to Guru</a>.
-                    </p>
-                    <p>The application consists of the interaction with a pet clinic, by creating owners, pets, visits, etc. 
-                       The user can view the list of all the pet owners. The user can also search for a particular pet owner 
-                       from the Last Name of the owner. They can add details of the pet associated with the owner as well as 
-                       schedule the visit to the Vet.
-                    </p>
-                    <p>This application was built using Java 11, Spring 5, Spring Boot 2, Hibernate ORM, H2 Database with 
-                       Thymeleaf for rendering the UI. </p>
-                    
-                    <br>
-
-                    <h3>Running Application Process on your computer</h3>
-                    <hr>
-                    <p>Toothless Pet Clinic is a <a href="https://spring.io/guides/gs/spring-boot" target="_blank">Spring Boot</a> 
-                       application built using <a href="https://spring.io/guides/gs/maven/"  target="_blank">Maven</a>.</p>
-                    <ul>
-                        <li><p>Download the application from the above</p></li>
-                        <li><p>Unzip the application</p></li>
-                        <li><p>Open your terminal</p></li>
-                        <li><p>Move to the root of the application</p></li>
-                        <li><p>Run <code>mvn spring-boot:run</code></p></li>
-                        <li><p>Navigate to 
-                            <a href="http://localhost:8080" target="_blank">http://localhost:8080</a> in your default browser</p>
-                        </li>
-                    </ul>
-
-                    <br>
-
-                    <h3>Working with Recipe App in your IDE</h3>
-                    <hr>
-                    <h4>Prerequisites</h4>
-                    <p>The following items should be installed in your system:</p>
-                    <ul>
-                        <li><p><a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html"
-                            target="_blank">Java 11</a> or newer</p></li>
-                        <li><p>Download and Install 
-                            <a href="https://maven.apache.org/download.cgi"
-                               target="_blank">Maven</a></li>
-                        <li><p>Your preferred IDE</p></li>
-                    </ul>
-                    <br>
-                    <h3>Database Configuration</h3>
-                    <hr>
-                    <p>In its default configuration, Toothless Pet Clinic uses an in-memory database (H2) which gets populated at startup 
-                       with data. The H2 console is automatically exposed at 
-                       <code>http://localhost:8080/h2-console</code> 
-                       and it is possible to inspect the content of the database using the <code>jdbc:h2:mem:testdb</code> URL.
-                    </p>
-                    <br>
-                    <h3>Application</h3>
-                    <hr>
-                    <div class="grid3">
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237048-b62daf00-7f5f-11eb-8014-eb0b9505c9c4.png" class="fancybox" data-fancybox="gallery1" title="Home" data-caption="Home Screen" id="img1">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237048-b62daf00-7f5f-11eb-8014-eb0b9505c9c4.png" class="img-fluid">
-                            </a>
-                            <p>Home Screen</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237060-bc239000-7f5f-11eb-925f-23d568a191f4.png" class="fancybox" data-fancybox="gallery1" title="Find Owners" data-caption="Find Owners">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237060-bc239000-7f5f-11eb-925f-23d568a191f4.png" class="img-fluid">
-                            </a>
-                            <p>Find Owners</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237063-bd54bd00-7f5f-11eb-94b8-f0f4d41790e9.png" class="fancybox" data-fancybox="gallery1" title="List of Veterinarians" data-caption="List of Veterinarians">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237063-bd54bd00-7f5f-11eb-94b8-f0f4d41790e9.png" class="img-fluid">
-                            </a>
-                            <p>List of Veterinarians</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237058-bb8af980-7f5f-11eb-861b-d78271813886.png" class="fancybox" data-fancybox="gallery1" title="List of the Pet Owners" data-caption="List of the Pet Owners">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237058-bb8af980-7f5f-11eb-861b-d78271813886.png" class="img-fluid">
-                            </a>
-                            <p>List of the Pet Owners</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237052-b9289f80-7f5f-11eb-8dc6-24ea2af8ae67.png" class="fancybox" data-fancybox="gallery1" title="Owner's Details" data-caption="Owner's Details">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237052-b9289f80-7f5f-11eb-8dc6-24ea2af8ae67.png" class="img-fluid">
-                            </a>
-                            <p>Owner's Details</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237055-ba59cc80-7f5f-11eb-9b30-29c8dd24a0bd.png" class="fancybox" data-fancybox="gallery1" title="Adding new visit for pet" data-caption="Adding new visit for pet">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237055-ba59cc80-7f5f-11eb-9b30-29c8dd24a0bd.png" class="img-fluid">
-                            </a>
-                            <p>Adding new visit for pet</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237056-bb8af980-7f5f-11eb-9163-8d0ebad50ad9.png" class="fancybox" data-fancybox="gallery1" title="Adding new Pet for the Owner" data-caption="Adding new Pet for the Owner">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237056-bb8af980-7f5f-11eb-9163-8d0ebad50ad9.png" class="img-fluid">
-                            </a>    
-                            <p>Adding new Pet for the Owner</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237061-bcbc2680-7f5f-11eb-8790-04c1dac96d0d.png" class="fancybox" data-fancybox="gallery1" title="Adding new Owner" data-caption="Adding new Owner">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237061-bcbc2680-7f5f-11eb-8790-04c1dac96d0d.png" class="img-fluid">
-                            </a>
-                            <p>Adding new Owner</p>
-                        </div>
-                        <div>
-                            <a href="https://user-images.githubusercontent.com/37581959/110237050-b8900900-7f5f-11eb-90a5-9a3dba56d418.png" class="fancybox" data-fancybox="gallery1" title="Error Page" data-caption="Error Page">
-                                <img src="https://user-images.githubusercontent.com/37581959/110237050-b8900900-7f5f-11eb-90a5-9a3dba56d418.png" class="img-fluid">
-                            </a>
-                            <p>Error Page</p>
-                        </div>
+    <!-- Hero -->
+    <section class="projheader p-5 text-center text-sm-start" id="projHeader">
+        <div id="hero">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div class="hero_text">
+                        <h1>Toothless Pet Clinic</h1>
+                        <h2 class="my-4">A website for <span class="text-yellow">Veterinarian's Clinic</span></h2>
+                        <a href="https://github.com/shubhamshukla7794/toothless-pet-clinic" class="btn btn-primary btn-lg btn-git" target="_blank"><svg class="icons"><use xlink:href="/svgs/Github.svg#github" /></svg> View on Github</a>
+                        <a href="https://github.com/shubhamshukla7794/toothless-pet-clinic/archive/main.zip" class="btn btn-primary btn-lg btn-zip"><svg class="icons"><use xlink:href="/svgs/Folder.svg#folder" /></svg> Download Zip</a>
                     </div>
+                    <img class="img-fluid d-block pt-3" src="/svgs/project_hero_2.svg" alt="Hero_Image" id="hero_img">
                 </div>
             </div>
-            
         </div>
-    
-        <footer class="mainFooter">
-            <div class="footer-copyright">
-                <div class="container">
+    </section>
+
+    <!-- Project Details -->
+    <section class="project_details">
+        <div class="container">
+            <h2>Toothless Pet Clinic</h2>
+            <div class="project_content">
+                <p>The project <strong>Toothless Pet Clinic</strong> is my version of the classic spring project  
+                    <a href="https://github.com/spring-projects/spring-petclinic" class="project-link" target="_blank">
+                       "Spring Pet Clinic"</a>. 
+                   This application was developed while undergoing an online course called
+                    <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" class="project-link" target="_blank">
+                        Spring Framework 5: Beginner to Guru</a>.
+                </p>
+                <p>The application consists of the interaction with a pet clinic, by creating owners, pets, visits, etc. 
+                   The user can view the list of all the pet owners. The user can also search for a particular pet owner 
+                   from the Last Name of the owner. They can add details of the pet associated with the owner as well as 
+                   schedule the visit to the Vet.
+                </p>
+                <p>This application was built using Java 11, Spring 5, Spring Boot 2, Hibernate ORM, H2 Database with 
+                   Thymeleaf for rendering the UI. </p>
+
+                <h3 class="mt-5">Running Application Process on your computer</h3>
+                <hr> 
+                <p>Toothless Pet Clinic is a <a href="https://spring.io/guides/gs/spring-boot" class="project-link" target="_blank">Spring Boot</a> 
+                    application built using <a href="https://spring.io/guides/gs/maven/" class="project-link" target="_blank">Maven</a>.</p>
+                <ul>
+                    <li><p>Download the application from the above</p></li>
+                    <li><p>Unzip the application</p></li>
+                    <li><p>Open your terminal</p></li>
+                    <li><p>Move to the root of the application</p></li>
+                    <li><p>Run <code>mvn spring-boot:run</code></p></li>
+                    <li><p>Navigate to 
+                        <a href="http://localhost:8080" class="project-link" target="_blank">http://localhost:8080</a> in your default browser</p>
+                    </li>
+                </ul>
+
+                <h3 class="mt-5">Working with Toothless Pet Clinic App in your IDE</h3>
+                <hr> 
+                <h4>Prerequisites</h4>
+                <p>The following items should be installed in your system:</p>
+                <ul>
+                    <li><p><a href="https://www.oracle.com/java/technologies/javase-jdk11-downloads.html" class="project-link" target="_blank">Java 11</a> or newer</p></li>
+                    <li><p>Download and Install 
+                        <a href="https://maven.apache.org/download.cgi" class="project-link" target="_blank">Maven</a></li>
+                    <li><p>Your preferred IDE</p></li>
+                </ul>
+
+                <h3 class="mt-5">Database Configuration</h3>
+                <hr> 
+                <p>In its default configuration, Recipe App uses an in-memory database (H2) which gets populated at startup 
+                    with data. The H2 console is automatically exposed at 
+                    <code>http://localhost:8080/h2-console</code> 
+                    and it is possible to inspect the content of the database using the <code>jdbc:h2:mem:testdb</code> url.
+                 </p>
+                <h3 class="mt-5">Project Screenshot</h3>
+                <hr> 
+                <div class="container img-container">
                     <div class="row">
-                        <div class="col-md-3">
-                            <a class="logo" href="/">
-                                <strong>Shubham Kumar Shukla</strong>
-                            </a>
+                        <div class="col-lg-4 img-outer first" onclick="showImage(this);">
+                            <img src="/images/toothless/Home_Screen.png" alt="">
+                            <div class="title">Home Screen</div>
                         </div>
-                        <div class="col-md-9">
-                            <p>© 2021 All Rights Reserved.</p>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/Find_Owners.png" alt="">
+                            <div class="title">Find Owners</div>
+                        </div>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/List_of_Veterinarians.png" alt="">
+                            <div class="title">List of Veterinarians</div>
+                        </div>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/List_of_the_Pet_Owners.png" alt="">
+                            <div class="title">List of the Pet Owners</div>
+                        </div>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/Owner_s_Details.png" alt="">
+                            <div class="title">Owner's Details</div>
+                        </div>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/Adding_new_visit_for_pet.png" alt="">
+                            <div class="title">Adding new visit for pet</div>
+                        </div>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/Adding_new_Pet_for_the_Owner.png" alt="">
+                            <div class="title">Adding new Pet for the Owner</div>
+                        </div>
+                        <div class="col-lg-4 img-outer" onclick="showImage(this);">
+                            <img src="/images/toothless/Adding_new_Owner.png" alt="">
+                            <div class="title">Adding new Owner</div>
+                        </div>
+                        <div class="col-lg-4 img-outer last" onclick="showImage(this);">
+                            <img src="/images/toothless/Error_Page.png" alt="">
+                            <div class="title">Error Page</div>
+                        </div>
+                    </div>
+            
+                    <div class="lightbox">
+                        <div class="image">
+                            <img src="/images/URLValidator/URLValidator_Home.jpg" alt="">
+                            <div class="title"> </div>
+                
+                            <div class="previous-btn">
+                                <svg class="icons"><use xlink:href="/svgs/Left.svg#left" /></svg>
+                            </div>
+                            <div class="next-btn">
+                                <svg class="icons"><use xlink:href="/svgs/Right.svg#right" /></svg>
+                            </div>
+                            <div class="options">
+                                <div class="close-btn">
+                                    <svg class="icons"><use xlink:href="/svgs/Close.svg#close" /></svg>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="/javascript/myScript.js"></script>
+            </div>
+        </div>
+    </section>
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg class="top"><use xlink:href="/svgs/Up.svg#up" /></svg></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <a href="/" class="logo">&lt; Shubham Kumar Shukla /&gt;</a>
+                </div>
+                <div class="col-lg">
+                    <p>&#169; 2021 All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/javascript/lightBoxAlt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>

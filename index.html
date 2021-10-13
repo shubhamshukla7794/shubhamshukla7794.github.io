@@ -1,87 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" 
-      integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" 
-      crossorigin="anonymous" />
-<link rel="stylesheet" href="css/style.css">
-<title>Shubham Kumar Shukla</title>
-<link rel="shortcut icon" type="image/x-icon" href="images/favicon-sks.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="svgs/favicon.svg" sizes="any" type="image/svg+xml">
+    <title>Shubham Kumar Shukla</title>
 </head>
 <body>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-angle-up"></i></button>
-    <!--======== NavBar =========-->
-    <nav class="navbar fixed-top navbar-expand-md navbar-dark" style="background-color: #032d4b;">
-        <a href="/" class="navbar-brand">Shubham Kumar Shukla</a>
-        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    
+    <!-- Navbar --> 
+    <nav class="navbar fixed-top navbar-expand-lg bg-custom navbar-dark py-2">
+        <div class="container">
+            <a href="/" class="navbar-brand">&lt; Shubham Kumar Shukla /&gt;</a>
 
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav">
-                <a href="/" class="nav-item nav-link active"><i class="fas fa-home"></i> Home</a>
-                <a href="#about_me" class="nav-item nav-link">About</a>
-                <a href="#projects" class="nav-item nav-link">Projects</a>
-                <a href="#contact" class="nav-item nav-link">Contact</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#header" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#my_details" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#my_projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact_details" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!--======== Header =========-->
-    <div class="jumbotron jumbotron-fluid mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h1>Hello</h1>
-                <h1 class="display-4">I am,</h1>
-                <h1 class="display-4"><strong>Shubham Kumar Shukla</strong></h1>
-                 
-                <hr class="my-4">
-                <p class="lead" style="font-size: xx-large;">I am a Full Stack Developer</p>
-                <a class="btn btn-primary btn-lg" href="assest/Shubham Kumar Shukla Resume.pdf" id="dwnBtn">
-                    <i class="fas fa-file"></i> Download Resume</a>
-            </div>
-            <div class="col-md-6 mt-3">
-                <img src="images/Side-Image.png" class="side-img" width="100%" height="100%">
+
+    <!-- Hero -->
+    <section class="header p-5 text-center text-sm-start" id="header">
+        <div id="hero">
+            <div class="container">
+                <div class="d-sm-flex align-items-center justify-content-between">
+                    <div class="hero_text">
+                        <h1>Shubham Kumar Shukla</h1>
+                        <h2 class="my-4">I am a <span class="text-yellow">Full Stack Developer</span></h2>
+                        <a href="assest/Shubham Kumar Shukla Resume.pdf" class="btn btn-primary btn-lg"><svg class="icons"><use xlink:href="svgs/Resume.svg#resume" /></svg> Download Resume</a>
+                    </div>
+                    <img class="img-fluid d-block pt-3" src="images/Hero_Image.png" alt="Hero_Image" id="hero_img">
+                </div>
             </div>
         </div>
-    </div>
-    <!--======== About Me =========-->
-    <div class="sections" id="about_me">
-        <div class="container-fluid">
-            <h1 class="content-title">Let Me Introduce Myself</h1>
-            <hr>
-            <div class="row" id="about-info">
-                <div class="col-md-6">  
-                    <div class="about-content">
+    </section>
+
+    <!-- About -->
+    <section class="about" id="my_details">
+        <div class="container">
+            <h2 class="fade-in">Let Me Introduce Myself</h2>
+            <div class="row">
+                <div class="col-lg">
+                    <div class="about_info fade-in">
                         <p>An organized and hard-working employee looking to join the company as a developer. 
-                           Recently, I have updated myself with Spring 5 and Spring Boot 2 along with Thymeleaf 
-                           for UI enhancement. Looking to take advantage of my skills in code development, and 
-                           the brief knowledge I have acquired of Information Security to provide the best to the 
-                           company.
+                            Recently, I have updated myself with Spring 5 and Spring Boot 2 along with Thymeleaf 
+                            for UI enhancement. Looking to take advantage of my skills in code development, and 
+                            the brief knowledge I have acquired of Information Security to provide the best to the 
+                            company.
                         </p>   
                         <p>I have worked as Information Security Engineer in Infosys where I have conducted 
-                           various security awareness sessions with more than 100 people as well as other Business 
-                           Security related work. During the training in Infosys, I was among the top performer of the batch.
-                        </p>                        
+                            various security awareness sessions with more than 100 people as well as other Business 
+                            Security related work. During the training in Infosys, I was among the top performer of the batch.
+                        </p>      
                         <h3 class="mt-4">Experience</h3>
-                        <hr>
+                        <hr> 
                         <div>
-                            <div class="div-left">
+                            <div class="float-start">
                                 <h4>Information Security Engineer</h4>
                                 <p>Infosys Ltd.</p>
                             </div>
-                            <div class="div-right">
+                            <div class="float-end">
                                 <p>01/2019 – 06/2020</p>
-                                <p class="mt-n3 float-right">Bengaluru</p>
+                                <p class="mt-n3 float-end">Bengaluru</p>
                             </div>
                         </div>
                         <br>
-                        <div class="exp">
+                        <div class="exp mt-5 pt-4">
                             <ul>
                                 <li><p>Conducted more than 10 security awareness sessions for the accounts, post a 
                                     security incident with an average attendance of 100 people</p></li>
@@ -95,309 +97,287 @@
                             </ul>
                         </div>
                         <div class="mt-5">
-                            <div class="div-left">
+                            <div class="float-start">
                                 <h4>Training</h4>
                                 <p>Hewlett-Packard Education Services</p>
                                 <p class="mt-n3">HP Summer Training in Java</p>
                             </div>
-                            <div class="div-right">
+                            <div class="mt-4 float-end">
                                 <p>05/2015 – 07/2015</p>
-                                <p class="mt-n3 float-right">Patna</p>
+                                <p class="mt-n3 float-end">Patna</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">  
-                    <div class="mt-5" id="grid">
-                        <div>
-                            <a href="/images/Shubham2.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Shubham2.jpg" class="img-fluid">
-                            </a>
+                <div class="col-lg">
+                    <div class="about-image-gallery fade-in">
+                        <div class="img-grid" id="grid">
+                            <div class="first" onclick="showImage(this);">
+                                <img src="images/Shubham2.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/Shubham.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/Shubham3.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/Shubham4.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/Shubham5.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/SceneClick.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/Dhoni.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div onclick="showImage(this);">
+                                <img src="images/Harry.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
+                            <div class="last" onclick="showImage(this);">
+                                <img src="images/Scene.jpg" class="img-fluid" alt="">
+                                <div class="title"></div>
+                            </div>
                         </div>
-                        <div>
-                            <a href="/images/Shubham.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Shubham.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/Shubham3.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Shubham3.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/Shubham4.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Shubham4.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/Shubham5.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Shubham5.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/SceneClick.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/SceneClick.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/Dhoni.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Dhoni.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/Harry.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Harry.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="/images/Scene.jpg" class="fancybox" data-fancybox="gallery1">
-                                <img src="/images/Scene.jpg" class="img-fluid">
-                            </a>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-            <div class="row" id="about-info">
-                <div class="col-md-6">  
-                    <div style="margin-top: 25%;">
-                        <img src="images/Side-Img3.png" class="side-img img-fluid">
-                    </div>
-                </div>
-                <div class="col-md-6">  
-                        <div class="about-content">
-                            <h3>Skills</h3>
-                            <hr>
-                            <h4>Technical Skills</h4>
-                            <p>Programming Languages</p>
-                            <span class="badge badge-info"><i class="fab fa-java"></i> Java</span>
-                            <span class="badge badge-info"><i class="fab fa-html5"></i> HTML</span>
-                            <span class="badge badge-info"><i class="fab fa-css3-alt"></i> CSS</span>
-                            <span class="badge badge-info"><i class="fas fa-database"></i> SQL</span>
-                            <p>Tools</p>
-                            <span class="badge badge-info">Maven</span>
-                            <span class="badge badge-info">Adobe Photoshop</span>
-                            <span class="badge badge-info">MS Office</span>
-                            <p>Frameworks</p>
-                            <span class="badge badge-info">Spring 5</span>
-                            <span class="badge badge-info">Spring Boot 2</span>
-                            <span class="badge badge-info">JUnit</span>
-                            <span class="badge badge-info">Hibernate</span>
-                            <span class="badge badge-info">Bootstrap</span>
 
-                            <h4 class="mb-3 mt-3">Soft Skills</h4>
-                            <span class="badge badge-info">Creative Problem Solving</span>
-                            <span class="badge badge-info">Customer Servicing</span>
-                            <span class="badge badge-info">Adaptive Learning</span>
-                            <span class="badge badge-info">Imaginative Thinking</span>
-                            <h3 class="mt-3">Languages I know</h3>
-                            <hr>
-                            <span class="badge badge-primary"><i class="fas fa-language"></i> English</span>
-                            <span class="badge badge-primary"><i class="fas fa-language"></i> Hindi</span>
-                            <h3 class="mt-5">Interests I have</h3>
-                            <hr>
-                            <span class="badge badge-primary"><i class="fas fa-swimmer"></i> Swimming</span>
-                            <span class="badge badge-primary"><i class="fas fa-film"></i> Watching Movies</span>
-                            <span class="badge badge-primary"><i class="fas fa-road"></i> Travelling</span>
-                            <span class="badge badge-primary"><i class="fab fa-readme"></i> Reading</span>
-                            <span class="badge badge-primary"><i class="fas fa-palette"></i> Drawing and Painting</span>
+                        <div class="lightbox">
+                            <div class="image">
+                                <img src="images/Dhoni.jpg" alt="">
+                                <div class="title"> </div>
+                    
+                                <div class="previous-btn">
+                                    <svg class="icons"><use xlink:href="svgs/Left.svg#left" /></svg>
+                                </div>
+                                <div class="next-btn">
+                                    <svg class="icons"><use xlink:href="svgs/Right.svg#right" /></svg>
+                                </div>
+                                <div class="options">
+                                    <div class="close-btn">
+                                        <svg class="icons"><use xlink:href="svgs/Close.svg#close" /></svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                </div>    
-            </div>
-        </div>
-    </div>
-    <!--======== Projects =========-->
-    <div class="sections" id="projects">
-        <div class="container project-container">
-            <h1 class="content-title">Projects</h1>
-            <hr>
-            <div class="contents">
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="single-content">
-                            <a href="/templates/urlvalidator.html"><h3><span class="fa-stack">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                              </span></i> URL Validator</h3></a>
-                            <p>
-                                The project URL Validator is a Spring Boot which checks whether a URL exists or not.
-                                If the URL exists then it shows the number of times it was searched. 
-                                If a URL doesn't exist it checks for the parent URL. 
-                                If none exists then it shows the error.
-                            </p>
-                        </div>    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-content">
-                            <a href="/templates/toothless.html"><h3><span class="fa-stack">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                              </span></i> Toothless Pet Clinic</h3></a>
-                            <p>
-                                The project Toothless Pet Clinic is my version of the classic spring project 
-                                <a href="https://github.com/spring-projects/spring-petclinic" target="_blank">
-                                    <strong>"Spring Pet Clinic"</strong></a>. 
-                                This application was developed while undergoing an online course called 
-                                <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" target="_blank">
-                                    <strong>Spring Framework 5: Beginner to Guru</strong></a>.
-                            </p>
-                        </div>    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-content">
-                            <a href="/templates/recipes.html"><h3><span class="fa-stack">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                              </span></i> My Recipes App</h3></a>
-                            <p>
-                                The project My Recipes App is a spring sample application, wherein you can add and view recipes.
-                                This project was developed while undergoing an online course called 
-                                <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" target="_blank">
-                                    <strong>Spring Framework 5: Beginner to Guru</strong></a>.
-                            </p>
-                        </div>    
-                    </div>
-                    
-                </div>
-                <div class="row" style="margin-top: 2%;">
-                    
-                    <div class="col-md-4">
-                        <div class="single-content">
-                            <a href="https://github.com/shubhamshukla7794/GeekyKernel" target="_blank">
-                                <h3><span class="fa-stack">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                              </span></i> GeekyKernel</h3></a>
-                            <p>
-                                GeekyKernel is a collaborative type project created during the course tenure in NIIT. 
-                                The project focuses on creating a collaboration tool that can be used by multiple people 
-                                where they can share their ideas using Blogs and Forum.
-                            </p>
-                        </div>    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-content">
-                            <a href="https://github.com/shubhamshukla7794/ShoppersHubMain" target="_blank">
-                                <h3><span class="fa-stack">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                              </span></i> ShoppersHub</h3></a>
-                            <p>
-                                An e-commerce website project created during the course tenure in NIIT.
-                                Here the users can search and order their desired products under various categories.
-                                An administrator can add, update or delete the categories and the products.
-                            </p>
-                        </div>    
-                    </div>
-                    <div class="col-md-4">
-                        <div class="single-content">
-                            <a href="https://github.com/shubhamshukla7794/Custom-Blogger-Theme" target="_blank">
-                                <h3><span class="fa-stack">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-code fa-stack-1x fa-inverse"></i>
-                              </span></i> Designed Blogger Website</h3></a>
-                            <p>
-                                Designed a custome blogger theme for a blogger website. 
-                                For designing this theme I have used HTML, CSS, Bootstrap 4 and Font-Awesome icons 
-                                along with Google Fonts.
-                                You can view the final design at 
-                                <a href="https://savitashukla48.blogspot.com/" target="_blank">
-                                    <strong>savitashukla48.blogspot.com</strong></a>
-                            </p>
-                        </div>    
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!--======== Contact =========-->
-    <div  class="sections" id="contact">
-        <div class="container g-i-t-container">
-            <h1>Get In Touch</h1>
-            <hr>
+                    </div>
+                </div>
+            </div>
+
             <div class="row">
-                <div class="col-md-5">                          
-                    <p>You can contact me on the following mobile number, or my address.</p>
-                    <div class="row">
-                        <div class="col-md-1">
-                            <i class="fas fa-phone-alt"></i>
-                        </div>
-                        <div class="col-md-6">
-                            <p>+91 8928765876</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-1">
-                            <i class="fas fa-home"></i>
-                        </div>
-                        <div class="col-md-10">
-                            <ul class="list-unstyled">
-                                <li>Flat No. 308, Bldg No. 48</li>
-                                <li>Kaladarshan CHS, CSR Complex Mhada</li>
-                                <li>Old Link Road, Kandivali West</li>
-                                <li>Mumbai, Maharashtra</li>
-                                <li>Pin - 400067</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="col-lg">
+                    <div class="my_hobby fade-in">
+                        <img src="images/My_Hobbies.png" alt="" width="100%">
+                    </div>                    
                 </div>
-                <div class="col-md-7">
-                    <p>You can also get in touch with me through my E-mail ID or my social media accounts.</p>
-                    <div class="mail">
-                        <p><a href="mailto:shubhamshukla7794@gmail.com">
-                            <span class="fa-stack" style="vertical-align: top;">
-                                <i class="far fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-google fa-stack-1x"></i> 
-                              </span></a> shubhamshukla7794@gmail.com</p>
+                <div class="col-lg">
+                    <div class="about-content fade-in">
+                        <h3>Skills</h3>
+                        <hr>
+                        <h4>Technical Skills</h4>
+                        <p>Programming Languages</p>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Java.svg#java"/></svg>Java</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/HTML.svg#html"/></svg>HTML</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/CSS.svg#css"/></svg>CSS</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/SQL.svg#sql"/></svg>SQL</span>
+
+                        <p>Tools</p>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Maven.svg#maven"/></svg>Maven</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Photoshop.svg#photoshop"/></svg>Adobe Photoshop</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/MSOffice.svg#msoffice"/></svg>MS Office</span>
+
+                        <p>Frameworks</p>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Spring.svg#spring"/></svg>Spring 5</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Spring.svg#spring"/></svg>Spring Boot 2</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/JUnit.svg#junit"/></svg>JUnit</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Hibernate.svg#hibernate"/></svg>Hibernate</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Bootstrap.svg#bootstrap"/></svg>Bootstrap</span>
+
+                        <h4 class="mb-3 mt-3">Soft Skills</h4>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Cogs.svg#cogs"/></svg>Creative Problem Solving</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Cogs.svg#cogs"/></svg>Customer Servicing</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Cogs.svg#cogs"/></svg>Adaptive Learning</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Cogs.svg#cogs"/></svg>Imaginative Thinking</span>
+                        <h3 class="mt-3">Languages I know</h3>
+                        <hr>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/English.svg#eng"/></svg>English</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Hindi.svg#hindi"/></svg>Hindi</span>
+                        <h3 class="mt-5">Interests I have</h3>
+                        <hr>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Swim.svg#swim"/></svg>Swimming</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/TV.svg#tv"/></svg>Watching Movies</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Train.svg#train"/></svg>Travelling</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Book.svg#book"/></svg>Reading</span>
+                        <span class="badge bg-custom-sec"><svg class="badge-icons"><use xlink:href="svgs/Brush.svg#brush"/></svg>Drawing and Painting</span>
                     </div>
-                    <div class="linkedIn">
-                        <p><a href="https://www.linkedin.com/in/shubhamshukla7794/" target="_blank">
-                            <span class="fa-stack" style="vertical-align: top;">
-                                <i class="far fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i> 
-                              </span></a> www.linkedin.com/in/shubhamshukla7794/</p>
-                    </div>
-                    <div class="gitHub">
-                        <p><a href="https://github.com/shubhamshukla7794" target="_blank">
-                            <span class="fa-stack" style="vertical-align: top;">
-                                <i class="far fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-github fa-stack-1x"></i> 
-                              </span></a> github.com/shubhamshukla7794</p>
-                    </div>
-                    
                 </div>
             </div>
-        </div>    
-    </div>
-    <!--======== Footer =========-->
-    <footer class="mainFooter">
-        <div class="footer-copyright">
-            <div class="container">
+        </div>
+    </section>
+
+
+    <!-- Projects -->
+    <section class="projects" id="my_projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="project-card fade-in">  
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="card-number">1</span>
+                                <h5 class="card-title mb-4">URL Validator</h5>
+                                <p class="card-text">The project URL Validator is a Spring Boot which checks whether a URL exists or not. If the URL exists then it shows the number of times it was searched. If a URL doesn't exist it checks for the parent URL. If none exists then it shows the error.</p>
+                                <a href="templates/urlvalidator.html" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card fade-in">  
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="card-number">2</span>
+                                <h5 class="card-title mb-4">Toothless Pet Clinic</h5>
+                                <p class="card-text">The project Toothless Pet Clinic is my version of the classic spring project <a href="https://github.com/spring-projects/spring-petclinic" target="_blank"> <strong>"Spring Pet Clinic"</strong></a>. This application was developed while undergoing an online course called <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" target="_blank"><strong>Spring Framework 5: Beginner to Guru</strong></a>.</p>
+                                <a href="templates/toothless.html" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card fade-in">  
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="card-number">3</span>
+                                <h5 class="card-title mb-4">My Recipes App</h5>
+                                <p class="card-text">The project My Recipes App is a spring sample application, wherein you can add and view recipes. This project was developed while undergoing an online course called <a href="https://www.udemy.com/spring-framework-5-beginner-to-guru" target="_blank"><strong>Spring Framework 5: Beginner to Guru</strong></a>.</p>
+                                <a href="templates/recipes.html" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card fade-in">  
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="card-number">4</span>
+                                <h5 class="card-title mb-4">GeekyKernel</h5>
+                                <p class="card-text">GeekyKernel is a collaborative type project created during the course tenure in NIIT. The project focuses on creating a collaboration tool that can be used by multiple people where they can share their ideas using Blogs and Forum.</p>
+                                <a href="https://github.com/shubhamshukla7794/GeekyKernel" target="_blank" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card fade-in">  
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="card-number">5</span>
+                                <h5 class="card-title mb-4">ShoppersHub</h5>
+                                <p class="card-text">An e-commerce website project created during the course tenure in NIIT. Here the users can search and order their desired products under various categories. An administrator can add, update or delete the categories and the products.</p>
+                                <a href="https://github.com/shubhamshukla7794/ShoppersHubMain" target="_blank" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="project-card fade-in">  
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <span class="card-number">6</span>
+                                <h5 class="card-title mb-4">Designed Blogger Website</h5>
+                                <p class="card-text">Designed a custom blogger theme for a blogger website. For designing this theme I have used HTML, CSS, Bootstrap 4 and Font-Awesome icons along with Google Fonts. You can view the final design at <a href="https://savitashukla48.blogspot.com/" target="_blank"><strong>savitashukla48.blogspot.com</strong></a></p>
+                                <a href="https://github.com/shubhamshukla7794/Custom-Blogger-Theme" target="_blank" class="btn btn-outline-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="contact" id="contact_details">
+        <div class="container fade-in">
+            <h2>Get In Touch</h2>
+            <div class="contact_container">
                 <div class="row">
-                    <div class="col-md-3">
-                        <a class="logo" href="/">
-                            <strong>Shubham Kumar Shukla</strong>
-                        </a>
+                    <div class="col-lg-5">
+                        <p>You can contact me on the following mobile number, or my address.</p>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <svg class="icons"><use xlink:href="svgs/Phone.svg#phone" /></svg>
+                            </div>
+                            <div class="col-md-6">
+                                <p>+91 8928765876</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1">
+                                <svg class="icons"><use xlink:href="svgs/Home.svg#Home_addr" /></svg>
+                            </div>
+                            <div class="col-md-10">
+                                <ul class="list-unstyled">
+                                    <li>Flat No. 308, Bldg No. 48</li>
+                                    <li>Kaladarshan CHS, CSR Complex MHADA</li>
+                                    <li>Old Link Road, Kandivali West</li>
+                                    <li>Mumbai, Maharashtra</li>
+                                    <li>Pin - 400067</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-md-9">
-                        <p>© 2021 All Rights Reserved.</p>
+                    <div class="col-lg-7">
+                        <p>You can also get in touch with me through my E-mail ID or my social media accounts.</p>
+                        <div class="mail">
+                              <a class="icon-link" href="mailto:shubhamshukla7794@gmail.com">
+                                <svg class="sma-icon" ><use xlink:href="svgs/Gmail_icon.svg#mail"/></svg><span>shubhamshukla7794@gmail.com</span>
+                              </a>
+                        </div>
+                        <div class="linkedIn">
+                              <a class="icon-link" href="https://www.linkedin.com/in/shubhamshukla7794/" target="_blank">
+                                <svg class="sma-icon" ><use xlink:href="svgs/Linkedin.svg#linkedin"/></svg><span>linkedin.com/in/shubhamshukla7794/</span>
+                              </a>
+                        </div>
+                        <div class="gitHub">
+                              <a class="icon-link" href="https://github.com/shubhamshukla7794" target="_blank">
+                                <svg class="sma-icon" ><use xlink:href="svgs/Github.svg#github"/></svg><span>github.com/shubhamshukla7794/</span>
+                              </a>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><svg class="top"><use xlink:href="svgs/Up.svg#up" /></svg></button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg">
+                    <a href="/" class="logo">&lt; Shubham Kumar Shukla /&gt;</a>
+                </div>
+                <div class="col-lg">
+                    <p>&#169; 2021 All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-
-        
-    
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" 
-        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" 
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="javascript/myScript.js"></script>
+    <script src="javascript/myScript.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
