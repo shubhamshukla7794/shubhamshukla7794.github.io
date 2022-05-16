@@ -127,6 +127,16 @@ section #hero_img {
     font-size: 1.1em;
 }
 
+.about_info a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    outline: none;
+}
+
+.about_info a:hover {
+    color: #353D40;
+}
 
 
 .my_hobby{
@@ -189,7 +199,7 @@ section #hero_img {
     backdrop-filter: blur(16px);
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.5);
     background: linear-gradient(to right bottom, rgba(225, 225, 225, 0.5), rgba(225, 225, 225, 0.3));
-    /* height: 350px; */
+    height: 24.7em;
 }
 
 .card-number {
@@ -205,6 +215,7 @@ section #hero_img {
 .card-title {
     font-size: x-large;
     font-weight: bold;
+    text-align: left;
 }
 
 .card-body {
@@ -380,6 +391,11 @@ code {
 	font-size: large;
 	border-radius: 5px;
 }
+
+video {
+    width: 80%;
+    height: auto;
+  }
 
 
 /* ---------------------------- I M A G E   G A L L E R Y ---------------------------- */
@@ -600,12 +616,23 @@ footer a:focus{
 
 
 /* @Media Queries */
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 1199px) {
+    .card {
+        height: 35em;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
 
     .projects {
         -webkit-clip-path: polygon(80% 0, 100% 5%, 100% 97%, 20% 100%, 0 95%, 0 3%);
         clip-path: polygon(80% 0, 100% 5%, 100% 97%, 20% 100%, 0 95%, 0 3%);
     }
+
+    .card {
+        height: 25em;
+    }
+
     .img-container .lightbox img,
     .about-image-gallery .lightbox img{
         width: 80vw; 
@@ -648,6 +675,14 @@ footer a:focus{
     .my_hobby{
         margin-top: 3vh;
     }
+
+    .card {
+        height: 21em;
+    }
+    video {
+        width: 90%;
+        height: auto;
+      }
 }
 
 @media screen and (max-width: 574px) {
@@ -664,4 +699,8 @@ footer a:focus{
         margin-bottom: 1em;
         margin-right: 0;
     }
+    video {
+        width: 100%;
+        height: auto;
+      }
 }
