@@ -127,6 +127,12 @@ section #hero_img {
     font-size: 1.1em;
 }
 
+.exp p {
+    font-size: 1.1em;
+    /* line-height: normal; */
+    margin-top: -14px;
+}
+
 .about_info a{
     text-decoration: none;
     color: #000;
